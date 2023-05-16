@@ -1,0 +1,11 @@
+
+<app-child *ngIf="!isChildDestroyed" [userName]="userName">
+  <div #contentWrapper>fool</div>
+</app-child>
+<div *ngIf="isChildDestroyed">child component is destroyed</div>
+<br>
+<br>
+
+
+<button (click)="updateUserName()">Update</button>
+<button (click)="destroy()">Destroyed child</button>
